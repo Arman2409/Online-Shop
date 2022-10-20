@@ -1,0 +1,89 @@
+[
+  {
+           "Model":"Apple iPhone 13 Pro Max",
+           "Screen":"6.7 inches",
+           "Internal memory":"1 TB",
+           "RAM":"6GB",
+           "Camera":"12 MP",
+            "Resolution":"1284 x 2778 pixels",
+            "Price":"$ 1,599",
+            "Image":"assests/smartphones/iPhone13ProMax.jpg"
+      
+  },
+  {
+         "Model":"Poco X3 GT",
+         "Screen":"6.6 inches",
+         "Internal memory":"256 GB",
+         "RAM":"8GB",
+         "Camera":"64 MP",
+         "Resolution":"1080 x 2400 pixels",
+         "Price":"$ 335",
+         "Image":"assests/smartphones/PocoX3GT.png"
+  },
+  {
+    "Model":"Xiaomi Mi 11",
+    "Screen":"6.81 inches",
+    "Internal memory":"256 GB",
+    "RAM":"12GB",
+    "Camera":"108 MP",
+    "Resolution":"1440 x 3200 pixels",
+    "Price":"$ 666",
+    "Image":"assests/smartphones/XiaomiMi11.jpg"
+  },
+  {
+    "Model":"Samsung Galaxy S21 Ultra 5G",
+    "Screen":"6.8 inches",
+    "Internal memory":"512 GB",
+    "RAM":"16GB",
+    "Camera":"108 MP",
+    "Resolution":"1440 x 3200 pixels",
+    "Price":"$ 1295"
+  },
+  {
+    "Model":"Huawei Mate 30E Pro 5G",
+    "Screen":"6.53 inches",
+    "Internal memory":"256 GB",
+    "RAM":"8 GB",
+    "Camera":"32 MP",
+    "Resolution":"1176 x 2400 pixels",
+    "Price":"$ 1295"
+  }, 
+  {
+    "Model":"Nokia G300",
+    "Screen":"6.52 inches",
+    "Internal memory":"64 GB",
+    "RAM":"4 GB",
+    "Camera":"16 + 5 + 2 MP",
+    "Resolution":"720x1600  pixels",
+    "Price":"$ 199"
+  },
+  {
+    "Model":"Lenovo K13 Note",
+    "Screen":"6.5 inches",
+    "Internal memory":"128 GB",
+    "RAM":"4 GB",
+    "Camera":"48 + 8 + 2 + 2 MP",
+    "Resolution":"720x1600  pixels",
+    "Price":"$ 199"
+  },
+  {
+    "Model":"Oneplus 9RT",
+    "Screen":"6.62 inches",
+    "Internal memory":"256 GB",
+    "RAM":"12 GB",
+    "Camera":"50 MP",
+    "Resolution":"1080 x 2400 pixels",
+    "Price":"$ 678"
+  },
+  {
+    "Model":"Google Pixel 9 Pro",
+    "Screen":"6.71 inches",
+    "Internal memory":"512 GB",
+    "RAM":"12 GB",
+    "Camera":"50 MP",
+    "Resolution":"1440 x 3120 pixels",
+    "Price":"$ 1099"
+  }
+  
+  
+]
