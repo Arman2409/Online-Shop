@@ -1,0 +1,19 @@
+#card-number-input::-webkit-outer-spin-button,
+#card-number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#phone-number-input{
+  -moz-appearance: textfield;
+}
+
+#phone-number-input::-webkit-outer-spin-button,
+#phone-number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#phone-number-input{
+  -moz-appearance: textfield;
+}
