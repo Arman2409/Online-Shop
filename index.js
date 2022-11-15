@@ -24,7 +24,7 @@ server.use(express.static(path.join(path.resolve() + "/client/build/")));
 
 server.get("/", (req,res) => {
     res.header("Access-Control-Allow-Origin", "*");
-    res.send("server running!")
+    res.sendFile(path.join(path.resolve() + "./client/build/index.html"));
 })
 
 server.get("/smartphonesData", (req, res) => {
