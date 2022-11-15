@@ -3,24 +3,28 @@ import sessions from 'express-session';
 import { MongoClient } from "mongodb";
 import assert from 'assert';
 import path from "path";
+import dotenv from "dotenv";
 
-var url = "mongodb+srv://arman:arman@cluster0.jh3pp.mongodb.net/smartClick";
+dotenv.config();
+
+var url = process.env.MONGODB_URL;
 
 const server = express()
 
 server.use(express.json())
 server.use(urlencoded({ extended:true }))
+server.set("trusty proxy", 1);
 server.use(sessions({
     secret:"onlyFullStackstill11202021",
     resave:false,
     saveUninitialized:true,
     cookie: {maxAge: 60000}
 }))
-server.use(express.static("./client/build"));
+server.use(express.static(path.join(path.resolve() + "/client/build/")));
 
-server.get("/", (req, res) => {
-    res.sendFile(path.resolve("./client/build/index.html"));
-})
+// server.get("/", (req, res) => {
+//     res.sendFile(path.resolve("./client/build/index.html"));
+// })
 
 server.get("/smartphonesData", (req, res) => {
     var resultArray = []

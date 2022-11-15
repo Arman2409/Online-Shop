@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --require dotenv/config index.js --ignore client"
+    "dev": "nodemon --require dotenv/config index.js --ignore client",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
