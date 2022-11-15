@@ -171,6 +171,10 @@ server.post("/markReceived", (req,res) => {
    }) 
 })
 
+server.get("*", (req,res) => {
+    res.sendFile(path.join(path.resolve() + "./client/build/index.html"))
+})
+
 const port = process.env.PORT || 2000
 server.listen(port, () => {
     console.log(`server running on port ${port}`);
