@@ -22,8 +22,9 @@ server.use(sessions({
 }))
 server.use(express.static(path.join(path.resolve() + "/client/build/")));
 
-server.get("/", (req, res) => {
-    res.sendFile(path.resolve("./client/build/index.html"));
+server.get("/", (req,res) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.send("server running!")
 })
 
 server.get("/smartphonesData", (req, res) => {
