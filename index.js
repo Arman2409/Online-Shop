@@ -12,6 +12,7 @@ var url = process.env.MONGODB_URL;
 const server = express()
 
 server.use(express.json())
+server.use(express.static(path.join(path.resolve() + "/client/build/")));
 server.use(urlencoded({ extended:true }))
 server.set("trusty proxy", 1);
 server.use(sessions({
@@ -20,12 +21,11 @@ server.use(sessions({
     saveUninitialized:true,
     cookie: {maxAge: 60000}
 }))
-server.use(express.static(path.join(path.resolve() + "/client/build/")));
 
-server.get("/", (req,res) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.sendFile(path.join(path.resolve() + "./client/build/index.html"));
-})
+// server.get("/", (req,res) => {
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.sendFile(path.join(path.resolve() + "./client/build/index.html"));
+// })
 
 server.get("/smartphonesData", (req, res) => {
     var resultArray = []
@@ -171,11 +171,11 @@ server.post("/markReceived", (req,res) => {
    }) 
 })
 
-server.get("*", (req,res) => {
-    res.sendFile(path.join(path.resolve() + "/client/build/index.html"))
-})
+// server.get("*", (req,res) => {
+//     res.sendFile(path.join(path.resolve() + "/client/build/index.html"))
+// })
 
-const port = process.env.PORT || 2000
+const port = process.env.PORT || 1624
 server.listen(port, () => {
     console.log(`server running on port ${port}`);
 })
