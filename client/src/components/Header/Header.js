@@ -41,7 +41,6 @@ function Header(){
   }, [authState])
 
   useEffect(() => {
-    //  if(authState){
       axios.get("/authenticated").then((resp) => {
         console.log(resp.data);
         if(typeof(resp.data) == "object"){
@@ -52,7 +51,6 @@ function Header(){
            setUserStatus("Log In")
         }
       })
-    //  }
   }, [])
 
   return(
@@ -78,7 +76,7 @@ function Header(){
              variant="h1"
              sx={{fontSize:"20px",color:mainTheme.palette.text.main}}
              >
-               SmartClick
+               SmartTouch
             </Typography>
           </Link>
         </Grid>

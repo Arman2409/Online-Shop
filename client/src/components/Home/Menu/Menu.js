@@ -101,7 +101,7 @@ function Menu(){
             variant="h3"
             sx={{transition:"1.5s", fontSize: {xs: "20px", md: "30px", lg:"35px"}, width: {}}}
             color={colorState}>
-             Welcome to SmartClick!
+             Welcome to SmartTouch!
            </Typography>
            <Typography
             variant="h6"

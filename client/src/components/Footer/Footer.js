@@ -21,7 +21,7 @@ function Footer() {
              variant="h5"
              color={mainTheme.palette.text.main}
              >
-                 SmartClick
+                 SmartTouch
             </Typography>
             <Grid 
             container
