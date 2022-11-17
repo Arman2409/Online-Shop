@@ -171,9 +171,9 @@ server.post("/markReceived", (req,res) => {
    }) 
 })
 
-// server.get("*", (req,res) => {
-//     res.sendFile(path.join(path.resolve() + "/client/build/index.html"))
-// })
+server.get("*", (req,res) => {
+    res.sendFile(path.join(path.resolve() + "/client/build/index.html"))
+})
 
 const port = process.env.PORT || 1624
 server.listen(port, () => {
