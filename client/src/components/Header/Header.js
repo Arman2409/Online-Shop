@@ -28,7 +28,7 @@ function Header(){
   }
 
   useEffect(() => {
-    axios.get("/authenticated").then((resp) => {
+    axios.get("https://smarttouch.onrender.com/authenticated").then((resp) => {
       console.log(resp.data)
       if(typeof(resp.data) === "object"){
          userData.current = resp.data
@@ -41,7 +41,7 @@ function Header(){
   }, [authState])
 
   useEffect(() => {
-      axios.get("/authenticated").then((resp) => {
+      axios.get("https://smarttouch.onrender.com/authenticated").then((resp) => {
         console.log(resp.data);
         if(typeof(resp.data) == "object"){
            userData.current = resp.data

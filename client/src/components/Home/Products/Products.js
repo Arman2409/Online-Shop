@@ -29,7 +29,7 @@ function Products(){
   }
 
    useEffect(() => {
-    axios.get("/smartphonesData").then(function(resp){
+    axios.get("https://smarttouch.onrender.com/smartphonesData").then(function(resp){
       console.log(resp.data);
       phonesArray.current = resp.data
       heightsArray.current = heights.slice(0, phonesArray.current.length)

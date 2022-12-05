@@ -9,7 +9,7 @@ function AnOrder({order}){
     const navigate = useNavigate()
 
    function markReceived(){
-       axios.post("/markReceived", {order}).then((resp) => {
+       axios.post("https://smarttouch.onrender.com/markReceived", {order}).then((resp) => {
            navigate("/orderFinished")
        })
    }

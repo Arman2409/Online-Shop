@@ -4,6 +4,7 @@ import { MongoClient } from "mongodb";
 import assert from 'assert';
 import path from "path";
 import dotenv from "dotenv";
+import cors from "cors";
 
 dotenv.config();
 
@@ -12,6 +13,9 @@ var url = process.env.MONGODB_URL;
 const server = express()
 
 server.use(express.json())
+server.use(cors({
+    origin: "*"
+}))
 server.use(express.static(path.join(path.resolve() + "/client/build/")));
 server.use(urlencoded({ extended:true }))
 server.set("trusty proxy", 1);

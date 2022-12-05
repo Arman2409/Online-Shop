@@ -16,19 +16,19 @@ function UserPage(){
     const dispatch = useDispatch();
 
     function signOut(){
-      axios.get("/signOut").then((resp) => {
+      axios.get("https://smarttouch.onrender.com/signOut").then((resp) => {
         dispatch({type:"signOut"});
         navigate("/");
       })
     }
     
     useEffect(() => {
-      axios.get("/authenticated").then((resp) => {
+      axios.get("https://smarttouch.onrender.com/authenticated").then((resp) => {
         console.log(resp.data);
         if(typeof(resp.data) === "object"){
            userData.current = resp.data
            console.log(userData.current.orders);
-           axios.get("/userOrders").then((resp) => {
+           axios.get("https://smarttouch.onrender.com/userOrders").then((resp) => {
             console.log(resp.data);
           })
            setLoaded(true)

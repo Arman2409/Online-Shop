@@ -25,7 +25,7 @@ function App() {
   const [loaded,setLoaded] = useState(false)
 
   useEffect(() => {
-    axios.get("/smartphonesData").then(function(resp){
+    axios.get("https://smarttouch.onrender.com/smartphonesData").then(function(resp){
       console.log(resp.data);
       phonesArr.current = resp.data
       setLoaded(true)

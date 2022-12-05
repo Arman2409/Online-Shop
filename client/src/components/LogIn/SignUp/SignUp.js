@@ -26,7 +26,7 @@ export default function SignUp() {
     var email = data.get("email");
     var password = data.get("password");
     if(firstName !== null && firstName.length > 1 && lastName !== null && lastName.length > 1 && email !== null && email.length > 4 && password !== null && password.length > 1){
-      axios.post("/signUpUser",{
+      axios.post("https://smarttouch.onrender.com/signUpUser",{
         firstName,
         lastName,
         email,

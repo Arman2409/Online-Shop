@@ -38,7 +38,7 @@ function Order( {phone} ){
     }
     
     useEffect(() => {
-        axios.get("/authenticated").then((resp) => {
+        axios.get("https://smarttouch.onrender.com/authenticated").then((resp) => {
             console.log(resp.data);
             if(typeof(resp.data) === "object"){
               const index = window.location.pathname.slice(6,7);

@@ -28,7 +28,7 @@ function SubmitWindow({phoneData, cardData, addressData, phoneNumberData}){
         var yyyy = today.getFullYear()
 
         today.current = dd + "/" + mm + "/" + yyyy
-        axios.post("/order",{
+        axios.post("https://smarttouch.onrender.com/order",{
             phone:phone.current,
             card:card.current,
             date:today,
